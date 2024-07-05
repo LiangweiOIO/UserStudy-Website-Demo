@@ -1,0 +1,1 @@
+{"userId": "test", "S1": [{"rating": 5, "QID": 1}, {"rating": 3, "QID": 2}, {"rating": 4, "QID": 3}], "S2": [{"betterImage": "2", "imagesConsistent": "yes", "QID": 1}, {"betterImage": "2", "imagesConsistent": "no", "QID": 2}, {"betterImage": "1", "imagesConsistent": "no", "QID": 3}]}
