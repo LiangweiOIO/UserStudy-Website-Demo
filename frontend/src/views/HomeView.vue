@@ -1,7 +1,7 @@
 <!--
  * @Author: Liangwei Wang liangweioio27@gmail.com
  * @Date: 2024-07-04 16:53:59
- * @LastEditTime: 2024-07-05 18:46:28
+ * @LastEditTime: 2024-07-06 17:21:41
  * @LastEditors: Liangwei Wang
 -->
 <template>
@@ -35,9 +35,10 @@ export default {
       const dataStore = useDataStore();
       dataStore.userRating.userId = this.userId;
 
+      console.log(dataStore.userRating.userId)
       this.$router.push({
-        path: '/aboutS1',
-        name: 'aboutS1',
+        path: '/about',
+        name: 'about',
       });
     }
   }

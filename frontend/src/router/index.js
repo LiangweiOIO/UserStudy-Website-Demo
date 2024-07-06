@@ -1,15 +1,13 @@
 /*
  * @Author: Liangwei Wang liangweioio27@gmail.com
  * @Date: 2024-07-04 16:53:59
- * @LastEditTime: 2024-07-05 01:00:38
+ * @LastEditTime: 2024-07-06 17:23:00
  * @LastEditors: Liangwei Wang
  */
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import AboutS1View from '../views/AboutS1View.vue'
-import AboutS2View from '../views/AboutS2View.vue'
-import StudyTwoView from '../views/StudyTwoView.vue'
-import StudyOneView from '../views/StudyOneView.vue'
+import StudyView from '../views/StudyView.vue'
+import AboutView from '../views/AboutView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,25 +18,15 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/aboutS1',
-      name: 'aboutS1',
-      component: AboutS1View
+      path: '/about',
+      name: 'about',
+      component: AboutView
     },
     {
-      path: '/studyOne',
-      name: 'studyOne',
-      component: StudyOneView
-    },
-    {
-      path: '/aboutS2',
-      name: 'aboutS2',
-      component: AboutS2View
-    },
-    {
-      path: '/studyTwo',
-      name: 'studyTwo',
-      component: StudyTwoView
-    },
+      path: '/study',
+      name: 'study',
+      component: StudyView
+    }
   ]
 })
 

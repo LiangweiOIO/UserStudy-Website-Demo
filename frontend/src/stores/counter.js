@@ -1,7 +1,7 @@
 /*
  * @Author: Liangwei Wang liangweioio27@gmail.com
  * @Date: 2024-07-04 16:53:59
- * @LastEditTime: 2024-07-05 18:46:42
+ * @LastEditTime: 2024-07-06 17:20:11
  * @LastEditors: Liangwei Wang
  */
 // import { ref, computed } from 'vue'
@@ -12,8 +12,7 @@ export const useDataStore = defineStore('dataStore', {
     return {
       userRating: {
         userId: null,
-        S1: null,
-        S2: null,
+        answers: null,
       }
     }
   }

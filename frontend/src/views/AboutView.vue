@@ -1,7 +1,7 @@
 <!--
  * @Author: Liangwei Wang liangweioio27@gmail.com
  * @Date: 2024-07-04 16:53:59
- * @LastEditTime: 2024-07-05 00:59:34
+ * @LastEditTime: 2024-07-06 16:09:39
  * @LastEditors: Liangwei Wang
 -->
 <template>
@@ -33,8 +33,8 @@ export default {
   methods: {
     startExperiment() {
       this.$router.push({
-        path: '/studyOne',
-        name: 'studyOne',
+        path: '/study',
+        name: 'study',
       });
     }
   }
