@@ -1,7 +1,7 @@
 /*
  * @Author: Liangwei Wang liangweioio27@gmail.com
  * @Date: 2024-07-06 15:58:36
- * @LastEditTime: 2024-07-06 16:17:09
+ * @LastEditTime: 2024-07-11 16:15:28
  * @LastEditors: Liangwei Wang
  */
 import { fileURLToPath, URL } from 'node:url'
@@ -22,7 +22,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://polar-datahub.sysu.edu.cn',
+        target: 'https://polar-datahub.sysu.edu.cn/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },

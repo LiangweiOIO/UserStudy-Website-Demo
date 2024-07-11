@@ -98,7 +98,7 @@ export default {
     },
     async created() {
         try {
-            const response = await axios.get('api/user_experiment/questions.json');
+            const response = await axios.get('api/questions.json');
             this.imgList = response.data;
         } catch (error) {
             console.error('Error fetching image list:', error);
@@ -126,7 +126,7 @@ export default {
         async saveResults(res) {
             console.log(res);
             try {
-                await axios.post('api/user_experiment/save_results.php', res, {
+                await axios.post('api/save_results.php', res, {
                     headers: {
                         'Content-Type': 'application/json'
                     }
