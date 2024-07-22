@@ -1,7 +1,7 @@
 /*
  * @Author: Liangwei Wang liangweioio27@gmail.com
  * @Date: 2024-07-06 15:58:36
- * @LastEditTime: 2024-07-11 16:15:28
+ * @LastEditTime: 2024-07-22 20:31:09
  * @LastEditors: Liangwei Wang
  */
 import { fileURLToPath, URL } from 'node:url'
@@ -11,6 +11,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/user_experiment/',
   plugins: [
     vue(),
   ],
